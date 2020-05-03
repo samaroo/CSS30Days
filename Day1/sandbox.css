@@ -1,11 +1,15 @@
 .facebook-style-btn{
-    border-radius: 2px;
     font-size: 0.9rem;
     padding: 6px 12px;
+    border-radius: 7px;
 }
 
+    .facebook-style-btn:focus{
+        outline: 0;
+    }
+
 .facebook-style-dark{
-    -moz-box-shadow:    inset 2px 2px 0 0 #4d73bf;
+    -moz-box-shadow:    inset 2px 2px 0 0 white;
     -webkit-box-shadow: inset 2px 2px 0 0 #4d73bf;
     box-shadow:         inset 2px 2px 0 0 #4d73bf;
 
@@ -15,3 +19,44 @@
     color: white;
     text-shadow: 0 1px 0 #3359a5;
 }
+
+    .facebook-style-dark:hover{
+        background: white;
+        border-color: #3359a5;
+        color: #3359a5;
+        -moz-box-shadow:     2px 2px 3px 0 #7d7c79;
+        -webkit-box-shadow:  2px 2px 3px 0 #7d7c79;
+        box-shadow:          2px 2px 3px 0 #7d7c79;
+    }
+
+    .facebook-style-dark:active{
+        background: #e0e0e0;
+        -moz-box-shadow:     0 0 0 0 #7d7c79;
+        -webkit-box-shadow:  0 0 0 0 #7d7c79;
+        box-shadow:          0 0 0 0 #7d7c79;
+    }
+
+.facebook-style-light{
+    -moz-box-shadow:    inset 2px 2px 0 0 #e8ebe9;
+    -webkit-box-shadow: inset 2px 2px 0 0 #e8ebe9;
+    box-shadow:         inset 2px 2px 0 0 #e8ebe9;
+
+    color: #333333;
+    border: solid 1px lightgray;
+}
+
+    .facebook-style-light:hover{
+        background: #333333;
+        border-color: #333333;
+        color: lightgray;
+        -moz-box-shadow:     2px 2px 3px 0 #7d7c79;
+        -webkit-box-shadow:  2px 2px 3px 0 #7d7c79;
+        box-shadow:          2px 2px 3px 0 #7d7c79;
+    } 
+
+    .facebook-style-light:active{
+        background: black;
+        -moz-box-shadow:     0 0 0 0 #7d7c79;
+        -webkit-box-shadow:  0 0 0 0 #7d7c79;
+        box-shadow:          0 0 0 0 #7d7c79;
+    }
