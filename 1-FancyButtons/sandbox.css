@@ -1,4 +1,4 @@
-.facebook-style-btn:focus, .btn-3d-1:focus, .btn-3d-2:focus{
+* {
     outline: 0;
 }
 
@@ -205,6 +205,87 @@
     border-image: linear-gradient(to top right, #3acf3c, #3cb0de);
     border-image-slice: 1;
     color: #31cca0;
-    transition: all 0.3s;
-
+    transition: all ease-out 0.3s;
 }
+
+    .gradient-button-1:hover{
+        background: linear-gradient(to top right, #3acf3c, #3cb0de);
+        color: white;
+        transition: all ease-out .5s; 
+    }
+
+    .gradient-button-1:active{
+        background: linear-gradient(to top right, #2fa731, #2e82a3);
+        border-image: linear-gradient(to top right, #2fa731, #2e82a3);
+        border-image-slice: 1;
+    }
+
+/* ================================================
+                Animated Buttons
+================================================ */
+
+.animated-button-1{
+    position: relative;
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 1.4rem;
+    background-color: teal;
+    background-image: url(pattern.png);
+    background-size: 40px 40px;
+    border: solid 1px rgb(3, 110, 110);
+    color: white;
+}
+
+    .animated-button-1:hover{
+        animation: loading-button-animation 0.5s linear infinite;
+    }
+
+    @keyframes loading-button-animation{
+        from {
+            background-position: 0 0;
+        }
+        to {
+            background-position: 40px 0;
+        }
+    }
+
+.animated-button-2 {
+    position: relative;
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 1.4rem;
+    background-color: rgb(21, 173, 173);
+    background-size: 40px 40px;
+    border: solid 1px rgb(3, 110, 110);
+    color: white;
+    transition: all ease 0.3s;
+}
+
+    .animated-button-2::after{
+        position: absolute;
+        display: inline-block;
+        top: 7%;
+        right: 0%;
+        content: "→";
+        font-size: 2.5rem;
+        color: white;
+        opacity: 0;
+        transition: all ease 0.3s;
+    }
+
+    .animated-button-2:hover::after{
+        opacity: 100;
+        top: 7%;
+        right: 5%;
+        transition: all ease 0.3s;
+    }
+
+    .animated-button-2:hover{
+        padding: 20px 60px 20px 20px;
+        transition: all ease 0.3s;
+    }
+
+    .animated-button-2:active{
+        background-color: rgb(17, 139, 139);
+    }
+
