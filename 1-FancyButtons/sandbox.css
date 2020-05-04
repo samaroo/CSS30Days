@@ -28,15 +28,18 @@
 
     color: white;
     text-shadow: 0 1px 0 #3359a5;
+    transition: all ease 0.3s;
 }
 
     .facebook-style-dark:hover{
         background: white;
         border-color: #3359a5;
         color: #3359a5;
+        padding: 7px 14px;
         -moz-box-shadow:     2px 2px 3px 0 #7d7c79;
         -webkit-box-shadow:  2px 2px 3px 0 #7d7c79;
         box-shadow:          2px 2px 3px 0 #7d7c79;
+        transition: all ease 0.3s;
     }
 
     .facebook-style-dark:active{
@@ -47,21 +50,23 @@
     }
 
 .facebook-style-light{
+    color: #333333;
+    border: solid 1px lightgray;
     -moz-box-shadow:    inset 2px 2px 0 0 #e8ebe9;
     -webkit-box-shadow: inset 2px 2px 0 0 #e8ebe9;
     box-shadow:         inset 2px 2px 0 0 #e8ebe9;
-
-    color: #333333;
-    border: solid 1px lightgray;
+    transition: all ease 0.3s;
 }
 
     .facebook-style-light:hover{
+        padding: 7px 14px;
         background: #333333;
         border-color: #333333;
         color: lightgray;
         -moz-box-shadow:     2px 2px 3px 0 #7d7c79;
         -webkit-box-shadow:  2px 2px 3px 0 #7d7c79;
         box-shadow:          2px 2px 3px 0 #7d7c79;
+        transition: all ease 0.3s;
     } 
 
     .facebook-style-light:active{
@@ -88,7 +93,6 @@
 
     .btn-3d-1::before{
         position: absolute;
-        display: block;
         content: "";
         width: 0;
         height: 0;
@@ -102,7 +106,6 @@
 
     .btn-3d-1::after{
         position: absolute;
-        display: block;
         content: "";
         width: 0;
         height: 0;
@@ -168,9 +171,9 @@
 }
 
     .btn-3d-2:hover{
-        background: -webkit-radial-gradient(#c71c0c, #a1190c);
-        background: -moz-radial-gradient(#c71c0c, #a1190c);
-        background: radial-gradient(#c71c0c, #a1190c);
+        background: -webkit-radial-gradient(#d61f0e, #b41c0e);
+        background: -moz-radial-gradient(#d61f0e, #b41c0e);
+        background: radial-gradient(#d61f0e, #b41c0e);
     }
 
     .btn-3d-2:active{
@@ -186,3 +189,22 @@
 
     }
 
+/* ================================================
+                Gradient Buttons
+================================================ */
+
+.gradient-button-1{
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.4rem;
+    box-sizing: border-box;
+    background-color: white;
+    border: solid 4px transparent;
+    border-image: linear-gradient(to top right, #3acf3c, #3cb0de);
+    border-image-slice: 1;
+    color: #31cca0;
+    transition: all 0.3s;
+
+}
