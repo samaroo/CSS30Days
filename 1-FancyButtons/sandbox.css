@@ -264,10 +264,10 @@
     .animated-button-2::after{
         position: absolute;
         display: inline-block;
-        top: 7%;
-        right: 0%;
-        content: "→";
-        font-size: 2.5rem;
+        top: 17%;
+        right: 2%;
+        content: "»";
+        font-size: 2rem;
         color: white;
         opacity: 0;
         transition: all ease 0.3s;
@@ -275,13 +275,13 @@
 
     .animated-button-2:hover::after{
         opacity: 100;
-        top: 7%;
-        right: 5%;
+        top: 17%;
+        right: 7%;
         transition: all ease 0.3s;
     }
 
     .animated-button-2:hover{
-        padding: 20px 60px 20px 20px;
+        padding: 20px 55px 20px 25px;
         transition: all ease 0.3s;
     }
 
@@ -289,3 +289,17 @@
         background-color: rgb(17, 139, 139);
     }
 
+/* ================================================
+                Toggle UI Buttons
+================================================ */
+
+.toggle-1 {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px 0 0;
+}
+
+    .toggle-1__input {
+        display: none;
+    }
