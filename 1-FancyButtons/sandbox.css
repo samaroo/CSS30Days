@@ -258,6 +258,7 @@
     background-size: 40px 40px;
     border: solid 1px rgb(3, 110, 110);
     color: white;
+    border-radius: 5px;
     transition: all ease 0.3s;
 }
 
@@ -281,7 +282,8 @@
     }
 
     .animated-button-2:hover{
-        padding: 20px 55px 20px 25px;
+        padding: 20px 60px 20px 20px;
+        border-radius: 35px;
         transition: all ease 0.3s;
     }
 
@@ -301,5 +303,5 @@
 }
 
     .toggle-1__input {
-        display: none;
+        display: inline-block;
     }
